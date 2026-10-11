@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>চাঁদের আলোয়, তোমার হাত ধরে 🌙</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Noto+Serif+Bengali:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ==== Scroll Progress Bar ==== -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- ==== Aurora Background ==== -->
+  <div class="aurora"></div>
+
+  <!-- ==== Particles ==== -->
+  <div class="particles" id="particles"></div>
+
+  <!-- ==== Falling Petals ==== -->
+  <div class="petals" id="petals"></div>
+
+  <!-- ==== Floating Hearts BG ==== -->
+  <div class="hearts-bg" id="heartsBg"></div>
+
+  <!-- ==== Butterflies ==== -->
+  <div class="butterflies" id="butterflies"></div>
+
+  <!-- ==== Cursor Trail ==== -->
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- ==== Shooting Stars ==== -->
+  <div class="shooting-stars" id="shootingStars"></div>
+
+  <!-- ==== Music Toggle ==== -->
+  <button class="music-btn" id="musicBtn" title="Music">🎵</button>
+  <audio id="bgMusic" loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/10/25/audio_946bc8f0a7.mp3?filename=romantic-piano-124378.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- ==== HERO SECTION ==== -->
+  <section class="hero">
+    <div class="stars" id="stars"></div>
+    <div class="moon"></div>
+    <div class="launch">
+      <div class="launch-body"></div>
+      <div class="launch-light"></div>
+      <div class="ripple ripple-1"></div>
+      <div class="ripple ripple-2"></div>
+      <div class="ripple ripple-3"></div>
+    </div>
+    <div class="water"></div>
+
+    <div class="hero-content">
+      <h1 class="hero-title">চাঁদের আলোয়,<br/>তোমার হাত ধরে</h1>
+      <p class="hero-sub">একটি সারপ্রাইজ, একটি প্রতিজ্ঞা, একটি নতুন সূচনা 🌙</p>
+      <div class="scroll-hint">↓ স্ক্রল করো ↓</div>
+    </div>
+  </section>
+
+  <!-- ==== SECTION 2: আমার ইচ্ছা ==== -->
+  <section class="section wish">
+    <div class="section-inner">
+      <h2 class="section-title">আমার ইচ্ছা</h2>
+      <p class="section-sub">তোমাকে আমি যেভাবে দেখতে চাই</p>
+
+      <div class="cards">
+        <div class="card tilt">
+          <div class="card-icon">👗</div>
+          <h3>সুন্দর শাড়ি</h3>
+          <p>তুমি পরবে একটা সুন্দর শাড়ি — লাল? গোলাপি? নাকি নীল? যেটা তোমাকে সবচেয়ে বেশি মানায়, সেটাই।</p>
+        </div>
+        <div class="card tilt">
+          <div class="card-icon">💄</div>
+          <h3>সাজগোজ</h3>
+          <p>মাথায় সুন্দর করে সাজাবে, হাতে চুড়ি, কপালে টিপ, আর চোখে সেই চেনা লাজুক হাসি।</p>
+        </div>
+        <div class="card tilt">
+          <div class="card-icon">🚪</div>
+          <h3>সালাম আর চুমো</h3>
+          <p>তুমি কল দেবে, আমি সালাম দিয়ে ঢুকব। তুমি সালাম দেবে। তারপর — দুজনে দুজনের কপালে চুমো।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== SECTION 3: LOVE LETTER (খোলা চিঠি) ==== -->
+  <section class="section letter-section">
+    <div class="section-inner">
+      <h2 class="section-title">তোমার জন্য চিঠি</h2>
+      <p class="section-sub">একটা খোলা চিঠি, শুধু তোমার জন্য</p>
+
+      <div class="envelope-wrap">
+        <div class="envelope" id="envelope">
+          <div class="envelope-back"></div>
+          <div class="envelope-letter" id="envelopeLetter">
+            <div class="letter-content">
+              <p class="letter-line" data-line="0">প্রিয়তমা,</p>
+              <p class="letter-line" data-line="1">জানো, প্রতিটা চাঁদের রাতে তোমার কথা ভাবি।</p>
+              <p class="letter-line" data-line="2">তোমার হাসিটা মনে পড়ে, আর মনটা ভরে যায়।</p>
+              <p class="letter-line" data-line="3">তুমি আমার প্রথম ভোর, আমার শেষ রাত।</p>
+              <p class="letter-line" data-line="4">তোমার হাতটা ধরে রাখতে চাই — সারাজীবন।</p>
+              <p class="letter-line" data-line="5">ভালোবাসি তোমাকে, প্রতিদিন আগের চেয়ে বেশি।</p>
+              <p class="letter-line letter-sign" data-line="6">— তোমার, চিরকালের জন্য 🌙</p>
+            </div>
+          </div>
+          <div class="envelope-front"></div>
+          <div class="envelope-flap" id="envelopeFlap"></div>
+          <div class="envelope-heart">💌</div>
+        </div>
+        <p class="envelope-hint" id="envelopeHint">💌 খামে ক্লিক করো</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== SECTION 4: PROMISE MOON (চাঁদের নিচে প্রতিজ্ঞা) ==== -->
+  <section class="section promise-moon">
+    <div class="section-inner">
+      <h2 class="section-title">চাঁদের নিচে প্রতিজ্ঞা</h2>
+      <p class="section-sub">চাঁদে ক্লিক করো — ৭টা তারা জ্বলবে</p>
+
+      <div class="big-moon-wrap">
+        <div class="big-moon" id="bigMoon">
+          <div class="moon-crater c1"></div>
+          <div class="moon-crater c2"></div>
+          <div class="moon-crater c3"></div>
+          <div class="moon-crater c4"></div>
+        </div>
+        <div class="moon-promises" id="moonPromises">
+          <div class="promise-star" data-index="0"><span>⭐</span><p>তোমার হাসি আগলে রাখব</p></div>
+          <div class="promise-star" data-index="1"><span>⭐</span><p>তোমার কষ্ট নিজের করে নেব</p></div>
+          <div class="promise-star" data-index="2"><span>⭐</span><p>তোমার স্বপ্ন নিজের বানাব</p></div>
+          <div class="promise-star" data-index="3"><span>⭐</span><p>প্রতিদিন বেশি ভালোবাসব</p></div>
+          <div class="promise-star" data-index="4"><span>⭐</span><p>তোমার পাশে থাকব সবসময়</p></div>
+          <div class="promise-star" data-index="5"><span>⭐</span><p>তোমার চোখে চোখ রাখব</p></div>
+          <div class="promise-star" data-index="6"><span>⭐</span><p>তোমার হাত কখনো ছাড়ব না</p></div>
+        </div>
+      </div>
+      <p class="moon-hint" id="moonHint">চাঁদে ক্লিক করো 🌙</p>
+    </div>
+  </section>
+
+  <!-- ==== SECTION 5: RING CHOICE (আংটি বাছাই) ==== -->
+  <section class="section ring-section">
+    <div class="section-inner">
+      <h2 class="section-title">আংটি বাছাই</h2>
+      <p class="section-sub">তিনটা আংটি — একটা বেছে নাও</p>
+
+      <div class="rings-choice" id="ringsChoice">
+        <div class="ring-choice" data-ring="1">
+          <div class="ring-shape gold"></div>
+          <p>সোনালি</p>
+        </div>
+        <div class="ring-choice" data-ring="2">
+          <div class="ring-shape rose"></div>
+          <p>গোলাপি</p>
+        </div>
+        <div class="ring-choice" data-ring="3">
+          <div class="ring-shape silver"></div>
+          <p>রুপালি</p>
+        </div>
+      </div>
+
+      <div class="ring-message" id="ringMessage"></div>
+    </div>
+  </section>
+
+  <!-- ==== SECTION 6: JOURNEY MAP (আমাদের যাত্রা) ==== -->
+  <section class="section journey">
+    <div class="section-inner">
+      <h2 class="section-title">আমাদের যাত্রা</h2>
+      <p class="section-sub">লঞ্চের রুট, চাঁদের আলোয়</p>
+
+      <div class="map-container">
+        <svg class="map-svg" viewBox="0 0 800 300" preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <linearGradient id="riverGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#4a6fa5" stop-opacity="0.3"/>
+              <stop offset="50%" stop-color="#6b8cae" stop-opacity="0.6"/>
+              <stop offset="100%" stop-color="#4a6fa5" stop-opacity="0.3"/>
+            </linearGradient>
+          </defs>
+          <path id="riverPath" d="M 50 200 Q 200 100, 400 180 T 750 150"
+                stroke="url(#riverGrad)" stroke-width="40" fill="none" stroke-linecap="round"/>
+          <path d="M 50 200 Q 200 100, 400 180 T 750 150"
+                stroke="#D4AF7A" stroke-width="2" fill="none" stroke-dasharray="8 8" opacity="0.7"/>
+          <circle cx="50" cy="200" r="10" fill="#C97B84"/>
+          <circle cx="750" cy="150" r="10" fill="#C97B84"/>
+          <text x="50" y="235" text-anchor="middle" font-size="14" fill="#8B3A4A">শুরু</text>
+          <text x="750" y="185" text-anchor="middle" font-size="14" fill="#8B3A4A">গন্তব্য</text>
+        </svg>
+        <div class="launch-marker" id="launchMarker">🚢</div>
+        <div class="journey-info" id="journeyInfo">
+          <p>📍 যাত্রা শুরু</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== SECTION 7: MOON WISH (চাঁদের কাছে চাওয়া) ==== -->
+  <section class="section moon-wish">
+    <div class="section-inner">
+      <div class="wish-moon">🌙</div>
+      <p class="wish-text">
+        চাঁদকে বলেছিলাম,<br/>
+        "তোকে আমার মতো ভালোবাসতে।"<br/>
+        চাঁদ বলল,<br/>
+        <span class="wish-highlight">"পারব না।"</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ==== SECTION 8: 100 TIMES LOVE (১০০ বার ভালোবাসি) ==== -->
+  <section class="section love-100">
+    <div class="section-inner">
+      <h2 class="section-title">১০০ বার ভালোবাসি</h2>
+      <p class="section-sub">বাটনে ক্লিক করো, দেখো কী হয়</p>
+
+      <button class="btn-love-100" id="loveBtn100">ভালোবাসি 💖</button>
+      <div class="love-counter" id="loveCounter">০ / ১০০</div>
+      <div class="love-burst" id="loveBurst"></div>
+      <div class="love-special" id="loveSpecial"></div>
+    </div>
+  </section>
+
+  <!-- ==== SECTION 9: ROSE GARDEN (গোলাপ বাগান) ==== -->
+  <section class="section rose-garden">
+    <div class="section-inner">
+      <h2 class="section-title">গোলাপ বাগান</h2>
+      <p class="section-sub">স্ক্রিনে ক্লিক করো — গোলাপ ফুটবে</p>
+
+      <div class="garden" id="garden">
+        <p class="garden-hint">🌹 এখানে ক্লিক করো 🌹</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== SECTION 10: GIFT ==== -->
+  <section class="section gift">
+    <div class="section-inner">
+      <h2 class="section-title">ছোট্ট উপহার</h2>
+      <p class="section-sub">আমি নিয়ে আসব, তোমার জন্য</p>
+
+      <div class="gift-box" id="giftBox">
+        <div class="gift-lid"></div>
+        <div class="gift-base"></div>
+        <div class="gift-ribbon-v"></div>
+        <div class="gift-ribbon-h"></div>
+        <div class="gift-bow"></div>
+        <div class="gift-glow"></div>
+      </div>
+      <p class="gift-text">কী আছে ভেতরে? সেটা বলব না — তবে এটুকু বলি, তোমার হাসির মতো দামি কিছু। 🎁</p>
+    </div>
+  </section>
+
+  <!-- ==== SECTION 11: QUESTION ==== -->
+  <section class="section question">
+    <div class="section-inner">
+      <h2 class="section-title">এখন আমার প্রশ্ন</h2>
+      <p class="question-text">
+        তুমি কি আগামীকাল, এই চাঁদের আলোয়,<br/>
+        আমার সাথে বাসর করতে রাজি?
+      </p>
+
+      <div class="btn-wrap" id="btnWrap">
+        <button class="btn-yes" id="yesBtn">হ্যাঁ, আমি রাজি 💖</button>
+        <button class="btn-no" id="noBtn">না</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== FINAL SCREEN ==== -->
+  <div class="final-screen" id="finalScreen">
+    <canvas class="fireworks-canvas" id="fireworksCanvas"></canvas>
+    <div class="final-content">
+      <h1 class="final-title">আমি তোমাকে ভালোবাসি 💖</h1>
+      <p class="final-sub">আজ, কাল, আর সারাজীবন।</p>
+      <p class="final-sub2">চাঁদের আলোয়, তোমার হাত ধরে — চিরকাল। 🌙</p>
+      <button class="btn-love" id="loveBtn">ভালোবাসি 💕</button>
+    </div>
+    <div class="confetti" id="confetti"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
